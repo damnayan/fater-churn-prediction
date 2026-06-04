@@ -30,3 +30,8 @@ The goal was to predict which users are at risk and support targeted marketing c
 
 ## Files
 - `grand_challenge.ipynb` — Python n
+- `grand_NEW.pbix` — Power BI dashboard
+- `Fater Grand Challenge 2026.pptx` — Final presentation
+
+## Tools
+Python, XGBoost, Pandas, Seaborn, Power BI
