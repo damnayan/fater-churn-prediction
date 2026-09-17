@@ -13,8 +13,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Просто копируем готовую модель и код API
-COPY models/ ./models/
+COPY fater_final_results.csv .
+COPY export_model.py .
+RUN python export_model.py
+
 COPY app/ ./app/
 
 EXPOSE 8000
